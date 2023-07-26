@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Cards:</title>
+  </head>
+  <style>
+    .card-container {
+      perspective: 1000px;
+    }
+    .card {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: transform 0.5s;
+      transform-style: preserve-3d;
+    }
+    .front,
+    .back {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      backface-visibility: hidden;
+    }
+    .front {
+      background-color: #f39c12;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .back {
+      background-color: #27ae60;
+      transform: rotateY(180deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-container:hover .card {
+  transform: rotateY(180deg);
+}
+  </style>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <div class="front">Front Content</div>
+        <div class="back">Back Content</div>
+      </div>
+    </div>
+  </body>
+</html>

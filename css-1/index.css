@@ -1,0 +1,21 @@
+.Header{
+    text-align: center;
+   border-style: solid;
+    border-color: brown;
+}
+.box-left{
+  text-align: left;  
+  
+}
+.box{
+    width: 80px;
+    height:1px;
+    padding: 20px;
+    border: 1px solid;
+    margin: 10px;
+    text-align: center;
+    color: brown;
+}
+.box-right{
+    text-align: right;
+}

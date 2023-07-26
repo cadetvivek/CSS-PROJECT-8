@@ -1,0 +1,40 @@
+/* CSS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: bisque;
+    color: black
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+
+  }
+  /* img{
+    border-radius: 50%;
+
+  } */
+  
+  .menu {
+    display: flex;
+    width: 20px;
+    height: 20px
+  }
+  
+  .menu li {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  .menu li a {
+    color: blue
+   
+  }
+  
+  
+ 
+    
+  
+  
